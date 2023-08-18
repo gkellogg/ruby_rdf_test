@@ -1,0 +1,34 @@
+# Processed by EYE v4.11.2 (2023-08-08)
+# eye ../../auxiliary-files/runtime.n3 ../cases/owl2rl/pizza.ttl tmp/n3query.n3 --query tmp/n3query.n3 --nope
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns1: <http://www.co-ode.org/ontologies/pizza/pizza.owl#>.
+
+ns1:MozzarellaTopping rdfs:subClassOf ns1:PizzaTopping.
+ns1:MozzarellaTopping rdfs:subClassOf ns1:Food.
+ns1:MozzarellaTopping rdfs:subClassOf _:bn_42.
+ns1:MozzarellaTopping rdfs:subClassOf _:bn_44.
+ns1:MozzarellaTopping rdfs:subClassOf _:bn_66.
+ns1:MozzarellaTopping rdfs:subClassOf _:bn_108.
+ns1:MozzarellaTopping rdfs:subClassOf _:bn_134.
+ns1:MozzarellaTopping rdfs:subClassOf _:bn_136.
+ns1:MozzarellaTopping rdfs:subClassOf _:bn_194.
+ns1:MozzarellaTopping rdfs:subClassOf _:bn_196.
+ns1:MozzarellaTopping rdfs:subClassOf _:bn_228.
+ns1:MozzarellaTopping rdfs:subClassOf _:bn_246.
+ns1:MozzarellaTopping rdfs:subClassOf _:bn_262.
+ns1:MozzarellaTopping rdfs:subClassOf _:bn_288.
+ns1:MozzarellaTopping rdfs:subClassOf _:bn_290.
+ns1:MozzarellaTopping rdfs:subClassOf _:bn_294.
+ns1:MozzarellaTopping rdfs:subClassOf _:bn_312.
+ns1:MozzarellaTopping rdfs:subClassOf _:bn_318.
+ns1:MozzarellaTopping rdfs:subClassOf _:bn_390.
+ns1:MozzarellaTopping rdfs:subClassOf _:bn_412.
+ns1:MozzarellaTopping rdfs:subClassOf _:bn_492.
+ns1:MozzarellaTopping rdfs:subClassOf _:bn_496.
+ns1:MozzarellaTopping rdfs:subClassOf _:bn_498.
+ns1:MozzarellaTopping rdfs:subClassOf _:bn_508.
+ns1:MozzarellaTopping rdfs:subClassOf _:bn_248.
+ns1:MozzarellaTopping rdfs:subClassOf _:bn_280.
+ns1:MozzarellaTopping rdfs:subClassOf _:bn_372.
+ns1:MozzarellaTopping rdfs:subClassOf _:bn_584.
