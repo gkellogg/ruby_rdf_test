@@ -1,6 +1,6 @@
 require 'rdf'
 require 'linkeddata'
-require 'rdf/ntriples'
+require 'rdf/nquads'
 
 file1 = "test1.ttl"
 file2 = "test2.ttl"
@@ -16,8 +16,8 @@ graphc2 = graph2.canonicalize()
 puts "|graphc1| = " + graphc1.count().to_s
 puts "|graphc2| = " + graphc2.count().to_s
 
-File.open("canon/" + file1, "w") { |f| f.write(graphc1.dump(:ntriples)) }
-File.open("canon/" + file2, "w") { |f| f.write(graphc2.dump(:ntriples)) }
+File.open("canon/" + file1, "w") { |f| f.write(graphc1.dump(:nquads)) }
+File.open("canon/" + file2, "w") { |f| f.write(graphc2.dump(:nquads)) }
 
 puts "\nmissing in graph2:"
 miss2_cnt = 0
