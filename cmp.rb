@@ -2,12 +2,12 @@ require 'rdf'
 require 'linkeddata'
 require 'rdf/nquads'
 
-file1 = "test1.ttl"
-file2 = "test2.ttl"
+file1 = "test1"
+file2 = "test2"
 
 puts "loading graphs"
-graph1 = RDF::Graph.load(file1)
-graph2 = RDF::Graph.load(file2)
+graph1 = RDF::Graph.load(file1 + ".ttl")
+graph2 = RDF::Graph.load(file2 + ".ttl")
 
 puts "canon'ing graphs"
 graphc1 = graph1.canonicalize()
@@ -16,8 +16,8 @@ graphc2 = graph2.canonicalize()
 puts "|graphc1| = " + graphc1.count().to_s
 puts "|graphc2| = " + graphc2.count().to_s
 
-File.open("canon/" + file1, "w") { |f| f.write(graphc1.dump(:nquads)) }
-File.open("canon/" + file2, "w") { |f| f.write(graphc2.dump(:nquads)) }
+File.open("canon/" + file1 + ".nq", "w") { |f| f.write(graphc1.dump(:nquads)) }
+File.open("canon/" + file2 + ".nq", "w") { |f| f.write(graphc2.dump(:nquads)) }
 
 puts "\nmissing in graph2:"
 miss2_cnt = 0
